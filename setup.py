@@ -5,19 +5,7 @@ import shutil
 import subprocess
 from setuptools import find_packages, setup
 
-# Copied from modelscope/utils/constant.py to avoid import in setup.py
-class Fields(object):
-    """ Names for different application fields
-    """
-    hub = 'hub'
-    datasets = 'datasets'
-    framework = 'framework'
-    cv = 'cv'
-    nlp = 'nlp'
-    audio = 'audio'
-    multi_modal = 'multi-modal'
-    science = 'science'
-    server = 'server'
+from modelscope.utils.constant import Fields
 
 
 def readme():
